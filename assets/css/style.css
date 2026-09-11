@@ -1,7 +1,9 @@
 /* ==========================================================================
    1. RESET & VARIABLES
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -96,7 +98,8 @@ a {
     transition: color 0.2s;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #ffffff;
 }
 
@@ -108,10 +111,11 @@ a {
 /* ==========================================================================
    3. HERO & BANNER SECTIONS
    ========================================================================== */
-.hero-section, .page-banner {
+.hero-section,
+.page-banner {
     position: relative;
-    background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)), 
-                url('hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
+        url('hero-bg.jpg') center/cover no-repeat;
     color: #ffffff;
     padding: 5rem 2rem;
     text-align: left;
@@ -121,20 +125,23 @@ a {
     min-height: 380px;
 }
 
-.hero-content, .banner-content {
+.hero-content,
+.banner-content {
     max-width: var(--max-width);
     margin: 0 auto;
     width: 100%;
 }
 
-.hero-title, .banner-title {
+.hero-title,
+.banner-title {
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
 
-.hero-subtitle, .banner-subtitle {
+.hero-subtitle,
+.banner-subtitle {
     font-size: 1.15rem;
     color: #e2e8f0;
     margin-bottom: 1.5rem;
@@ -307,7 +314,8 @@ a {
 /* ==========================================================================
    6. INFO & HIGHLIGHTS SECTIONS
    ========================================================================== */
-.info-section, .highlights-section {
+.info-section,
+.highlights-section {
     max-width: var(--max-width);
     margin: 3rem auto;
     padding: 0 1.5rem;
@@ -316,7 +324,8 @@ a {
     gap: 2rem;
 }
 
-.quote-card, .image-quote-card {
+.quote-card,
+.image-quote-card {
     background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('quote-bg.jpg') center/cover;
     border-radius: var(--radius-md);
     padding: 2.5rem;
@@ -333,14 +342,16 @@ a {
     line-height: 1.6;
 }
 
-.facts-card, .highlights-card {
+.facts-card,
+.highlights-card {
     background: var(--bg-card);
     border-radius: var(--radius-md);
     padding: 1.75rem;
     border: 1px solid var(--border-color);
 }
 
-.facts-title, .highlights-title {
+.facts-title,
+.highlights-title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
@@ -358,7 +369,8 @@ a {
     border-bottom: none;
 }
 
-.facts-table th, .facts-table td {
+.facts-table th,
+.facts-table td {
     padding: 0.6rem 0;
     text-align: left;
     font-size: 0.9rem;
@@ -396,6 +408,23 @@ a {
     text-align: center;
     padding: 4rem 1.5rem;
     margin-top: auto;
+}
+
+.cta-button {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem 1.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-blue-hover);
 }
 
 .cta-title {
@@ -462,7 +491,8 @@ a {
     padding: 0 1.5rem;
 }
 
-.visit-section, .tips-section {
+.visit-section,
+.tips-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -470,7 +500,8 @@ a {
     margin: 3rem 0;
 }
 
-.visit-image img, .tips-image img {
+.visit-image img,
+.tips-image img {
     border-radius: var(--radius-md);
     width: 100%;
     height: 240px;
@@ -512,7 +543,8 @@ a {
     margin-top: 1.5rem;
 }
 
-.transport-card, .transport-grid > div {
+.transport-card,
+.transport-grid>div {
     background: var(--bg-card);
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -579,13 +611,20 @@ a {
     background-color: var(--primary-blue-hover);
 }
 
+
+
+
 /* ==========================================================================
    9. RESPONSIVE OVERRIDES
    ========================================================================== */
 @media (max-width: 768px) {
-    .info-section, .highlights-section, .destinations-grid.grid-3-col {
+
+    .info-section,
+    .highlights-section,
+    .destinations-grid.grid-3-col {
         grid-template-columns: 1fr;
     }
+
     .navbar {
         flex-direction: column;
         gap: 1rem;
