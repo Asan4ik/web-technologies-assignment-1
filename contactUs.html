@@ -8,14 +8,29 @@
 </head>
 
 <body>
-    <div>
-        <div>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-title">Explore Kazakhstan</span>
+            <span class="logo-subtitle">Discover More</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Destinations</a>
+            <a href="#" class="nav-link">Travel Planner</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <div class="search-icon">🔍</div>
+    </header>
+
+    <div class="page-container">
+        <div class="contact-header">
             <h1>Plan Your Trip</h1>
             <p>Have questions about planning your trip to Kazakhstan? Get in touch with our team!</p>
         </div>
-        <div>
+        <div class="contact-section">
             <h3>Send us a Message</h3>
-            <div>
+            <div class="contact-form-container">
                 <form action="submit_form.php" method="POST">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required><br><br>
@@ -24,44 +39,66 @@
                     <input type="email" id="email" name="email" required><br><br>
 
                     <label for="destination">Destination:</label>
-                    <input type="text" id="destination" name="destination" required><br><br>
+                    <select id="destination" name="destination" required>
+                        <option value="almaty">Almaty</option>
+                        <option value="astana">Astana</option>
+                        <option value="shymkent">Shymkent</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label for="trip_type">Trip type:</label><br>
+                    <input type="radio" id="nature" name="trip_type" value="nature" required>
+                    <label for="nature">Nature and Adventure</label><br>
+                    <input type="radio" id="cultural" name="trip_type" value="cultural">
+                    <label for="cultural">Cultural and Historical</label><br>
+                    <input type="radio" id="city" name="trip_type" value="city">
+                    <label for="city">City Break</label><br>
+                    <input type="radio" id="other" name="trip_type" value="other">
+                    <label for="other">Other</label><br><br>
+
 
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-                    <input type="submit" value="Submit">
                 </form>
-                <button onclick="window.location.href='travelGuide.html'">Back to Travel Guide</button>
+                <button type="submit">Send Message</button>
             </div>
         </div>
+        <div class="cta-section">
+            <h1>Your next adventure starts here!</h1>
+            <p>Let us help you plan the perfect journey to Kazakhstan!</p>
+            <div class="cta-button">
+                <button>Explore Destinations!</button>
+            </div>
+        </div>
+    </div>
 
-    </div>
-</body>
-<footer class="footer">
-    <div class="footer-top">
-        <div class="footer-brand">
-            <span class="logo-title">Explore Kazakhstan</span>
-            <span class="logo-subtitle">Discover More</span>
-        </div>
-        <p class="footer-motto">New places. New stories. Same amazing planet.</p>
-        <div class="social-links">
-            <span class="social-label">Follow us</span>
-            <div class="social-icons">
-                <a href="#">📷</a>
-                <a href="#">▶️</a>
-                <a href="#">💬</a>
-                <a href="#">✈️</a>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="logo-title">Explore Kazakhstan</span>
+                <span class="logo-subtitle">Discover More</span>
+            </div>
+            <p class="footer-motto">New places. New stories. Same amazing planet.</p>
+            <div class="social-links">
+                <span class="social-label">Follow us</span>
+                <div class="social-icons">
+                    <a href="#">📷</a>
+                    <a href="#">▶️</a>
+                    <a href="#">💬</a>
+                    <a href="#">✈️</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p class="copyright">&copy; 2025 Explore Kazakhstan. All rights reserved.</p>
-        <div class="footer-legal">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Explore Kazakhstan. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
+
 
 </html>
