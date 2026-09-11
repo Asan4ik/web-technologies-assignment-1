@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Contact Us</title>
 </head>
+
 <body>
-    
+    <div>
+        <div>
+            <h1>Plan Your Trip</h1>
+            <p>Have questions about planning your trip to Kazakhstan? Get in touch with our team!</p>
+        </div>
+        <div>
+            <h3>Send us a Message</h3>
+            <div>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <button onclick="window.location.href='travelGuide.html'">Back to Travel Guide</button>
+            </div>
+        </div>
+
+    </div>
 </body>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <span class="logo-title">Explore Kazakhstan</span>
+            <span class="logo-subtitle">Discover More</span>
+        </div>
+        <p class="footer-motto">New places. New stories. Same amazing planet.</p>
+        <div class="social-links">
+            <span class="social-label">Follow us</span>
+            <div class="social-icons">
+                <a href="#">📷</a>
+                <a href="#">▶️</a>
+                <a href="#">💬</a>
+                <a href="#">✈️</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Explore Kazakhstan. All rights reserved.</p>
+        <div class="footer-legal">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</footer>
+
 </html>
