@@ -115,7 +115,7 @@ a {
 .page-banner {
     position: relative;
     background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
-        url('hero-bg.jpg') center/cover no-repeat;
+        url('') center/cover no-repeat;
     color: #ffffff;
     padding: 5rem 2rem;
     text-align: left;
