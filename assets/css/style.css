@@ -611,7 +611,9 @@ a {
     background-color: var(--primary-blue-hover);
 }
 
-
+.team-members {
+    list-style: none;
+}
 
 
 /* ==========================================================================
