@@ -181,6 +181,7 @@ a {
     color: #ffffff;
 }
 
+
 /* ==========================================================================
    4. FEATURES & CARDS
    ========================================================================== */
@@ -403,7 +404,7 @@ a {
 /* ==========================================================================
    7. CALL TO ACTION & FOOTER
    ========================================================================== */
-.cta-section {
+.page-container .cta-section {
     background-color: #f1f5f9;
     text-align: center;
     padding: 4rem 1.5rem;
@@ -489,6 +490,11 @@ a {
     max-width: var(--max-width);
     margin: 2rem auto;
     padding: 0 1.5rem;
+}
+
+.page-container .contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .visit-section,
