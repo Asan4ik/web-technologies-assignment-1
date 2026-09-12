@@ -114,8 +114,6 @@ a {
 .hero-section,
 .page-banner {
     position: relative;
-    background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
-        url('') center/cover no-repeat;
     color: #ffffff;
     padding: 5rem 2rem;
     text-align: left;
@@ -123,6 +121,16 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     min-height: 380px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
+        url('https://www.goworldtravel.com/wp-content/uploads/2024/07/Astana-Kazakhstan-Feature-Imgae-from-Canva.jpg') center/cover no-repeat;
+}
+
+.page-banner {
+    background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
+        url('https://2021-2025.state.gov/wp-content/uploads/2019/04/Kazakhstan-2426x1406.jpg') center/cover no-repeat;
 }
 
 .hero-content,
@@ -327,7 +335,7 @@ a {
 
 .quote-card,
 .image-quote-card {
-    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('quote-bg.jpg') center/cover;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://2021-2025.state.gov/wp-content/uploads/2019/04/Kazakhstan-2426x1406.jpg') center/cover;
     border-radius: var(--radius-md);
     padding: 2.5rem;
     color: #ffffff;
